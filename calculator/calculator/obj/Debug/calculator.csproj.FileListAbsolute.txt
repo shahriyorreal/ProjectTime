@@ -1,0 +1,9 @@
+D:\pr\c#\Новая папка\calculator\calculator\bin\Debug\calculator.exe.config
+D:\pr\c#\Новая папка\calculator\calculator\obj\Debug\calculator.csprojResolveAssemblyReference.cache
+D:\pr\c#\Новая папка\calculator\calculator\obj\Debug\calculator.Form1.resources
+D:\pr\c#\Новая папка\calculator\calculator\obj\Debug\calculator.Properties.Resources.resources
+D:\pr\c#\Новая папка\calculator\calculator\obj\Debug\calculator.csproj.GenerateResource.Cache
+D:\pr\c#\Новая папка\calculator\calculator\bin\Debug\calculator.exe
+D:\pr\c#\Новая папка\calculator\calculator\bin\Debug\calculator.pdb
+D:\pr\c#\Новая папка\calculator\calculator\obj\Debug\calculator.exe
+D:\pr\c#\Новая папка\calculator\calculator\obj\Debug\calculator.pdb
