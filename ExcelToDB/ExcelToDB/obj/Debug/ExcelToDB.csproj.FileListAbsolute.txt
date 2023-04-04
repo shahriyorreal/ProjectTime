@@ -1,0 +1,17 @@
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\bin\Debug\ExcelToDB.exe.config
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\bin\Debug\ExcelToDB.exe
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\bin\Debug\ExcelToDB.pdb
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\bin\Debug\ExcelDataReader.DataSet.dll
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\bin\Debug\ExcelDataReader.dll
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.csprojResolveAssemblyReference.cache
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.Form1.resources
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.Properties.Resources.resources
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.csproj.GenerateResource.Cache
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.exe
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.pdb
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.UserControls.UC_Tovars.resources
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\bin\Debug\Guna.UI2.dll
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.UserControls.UC_Staffs.resources
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.PageDirector.resources
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.FormStaffs.resources
+D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.FormSignIn.resources
