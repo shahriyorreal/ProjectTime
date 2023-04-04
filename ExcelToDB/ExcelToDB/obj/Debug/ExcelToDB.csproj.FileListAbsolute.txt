@@ -15,3 +15,6 @@ D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.UserContr
 D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.PageDirector.resources
 D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.FormStaffs.resources
 D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.FormSignIn.resources
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\bin\Debug\ExcelToDB.exe.config
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.exe
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.pdb
