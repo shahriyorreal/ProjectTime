@@ -18,3 +18,17 @@ D:\pr\c#\Новая папка\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.FormSignI
 C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\bin\Debug\ExcelToDB.exe.config
 C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.exe
 C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.pdb
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\bin\Debug\ExcelToDB.exe
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\bin\Debug\ExcelToDB.pdb
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\bin\Debug\ExcelDataReader.dll
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\bin\Debug\Guna.UI2.dll
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.csprojResolveAssemblyReference.cache
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.Form1.resources
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.FormSignIn.resources
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.PageDirector.resources
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.FormStaffs.resources
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.Properties.Resources.resources
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.UserControls.UC_Staffs.resources
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.UserControls.UC_Tovars.resources
+C:\Users\Shahriyor\Documents\GitHub\ProjectTime\ExcelToDB\ExcelToDB\obj\Debug\ExcelToDB.csproj.GenerateResource.Cache

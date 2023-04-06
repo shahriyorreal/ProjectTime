@@ -14,6 +14,7 @@ namespace ExcelToDB
 {
     public partial class FormStaffs : Form
     {
+        int salary = 0;
         DataRepository conn = new DataRepository();
 
         public User User = new User();
@@ -21,17 +22,26 @@ namespace ExcelToDB
         int h, m, s;
         public FormStaffs()
         {
-            //User = new Classes.User();
             InitializeComponent();
             t = new System.Timers.Timer();
             t.Interval = 1000;
-            t.Elapsed += OnTimeEvent;         
+            t.Elapsed += OnTimeEvent;
+        }
+        public int MyProperty { get; set; }
+        public void Salary()
+        {
+            conn.Open();
+            String qwery = "SELECT salary FROM staffs WHERE staffs.id = '" + User.id + "'";
+            var get = conn.Get(qwery);
+            DataTable dt = new DataTable();
+            salary = int.Parse(get.Rows[0]["salary"].ToString());
+            conn.Close();
         }
 
         private void GetData()
         {
             conn.Open();
-            string query = "SELECT user_works_time.`time`, user_works_time.`date` FROM user_works_time WHERE user_works_time.`id_user` = '"+User.id+"'";
+            string query = "SELECT user_works_time.`time`, user_works_time.`date` FROM user_works_time WHERE user_works_time.`id_user` = '"+User.id+"' group by day(date)";
             var get = conn.Get(query);
             DataTable dt = new DataTable();
             DataGridView1.DataSource = get;
@@ -83,13 +93,10 @@ namespace ExcelToDB
 
         private void FormStaffs_Load(object sender, EventArgs e)
         {
-            NameStaffsLabel.Text = User.Name; 
+            NameStaffsLabel.Text = User.Name;
+            Salary();
         }
 
-        private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-            
-        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -119,11 +126,6 @@ namespace ExcelToDB
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             t.Stop();
@@ -133,5 +135,21 @@ namespace ExcelToDB
         {
             GetData();
         }
+
+        private void guna2Button3_Click_1(object sender, EventArgs e)
+        {
+            conn.Open();
+            string qwery = "SELECT SEC_TO_TIME( SUM(TIME_TO_SEC(TIME)))AS TIME, user_works_time.`date` FROM user_works_time WHERE id_user = '" + User.id + "'  AND DATE BETWEEN DATE_SUB(NOW(), INTERVAL 1 MONTH) AND NOW()";
+            var get = conn.Get(qwery);
+            DataTable dt = new DataTable();
+            var time_salary = get.Rows[0]["TIME"].ToString();
+            DataGridView1.DataSource = get;
+            conn.Close();
+
+            //int nnn = int.Parse(time_salary) * salary;
+            label2.Text = time_salary.ToString();
+
+         }
+
     }
 }

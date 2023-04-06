@@ -9,11 +9,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ExcelToDB.Repositories;
 
 namespace ExcelToDB
 {
     public partial class PageDirector : Form
     {
+        DataRepository conn = new DataRepository();
         public User User = new User();
         public PageDirector()
         {
@@ -26,6 +28,16 @@ namespace ExcelToDB
             PanelContainer.Controls.Add(usercontrol);
             usercontrol.BringToFront();
         }
+        private void GetData()
+        {
+            conn.Open();
+            string qwery = "SELECT SEC_TO_TIME( SUM(TIME_TO_SEC(TIME))) FROM user_works_time WHERE id_user = 14";
+            var get = conn.Get(qwery);
+            DataTable dt = new DataTable();
+            DataGridView1.DataSource = get;
+            conn.Close();
+        }
+
         private void btn_Staffs_Click(object sender, EventArgs e)
         {
             UC_Staffs us_staffs = new UC_Staffs();
@@ -86,6 +98,11 @@ namespace ExcelToDB
         private void PageDirector_Load(object sender, EventArgs e)
         {
             label2.Text = User.Name;
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            GetData();
         } 
     }
 }
