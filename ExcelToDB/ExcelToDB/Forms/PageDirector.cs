@@ -16,6 +16,7 @@ namespace ExcelToDB
     public partial class PageDirector : Form
     {
         DataRepository conn = new DataRepository();
+        Calculation calc = new Calculation();
         public User User = new User();
         public PageDirector()
         {
@@ -31,9 +32,15 @@ namespace ExcelToDB
         private void GetData()
         {
             conn.Open();
-            string qwery = "SELECT SEC_TO_TIME( SUM(TIME_TO_SEC(TIME))) FROM user_works_time WHERE id_user = 14";
+            string qwery = "SELECT SEC_TO_TIME( SUM(TIME_TO_SEC(TIME)))AS TIME, staffs.`salary`, staffs.`Name`, '' As S FROM user_works_time, staffs WHERE user_works_time.`id_user` = staffs.`id` AND DATE BETWEEN DATE_SUB(NOW(), INTERVAL 1 MONTH) AND NOW() GROUP BY staffs.`id`";
             var get = conn.Get(qwery);
-            DataTable dt = new DataTable();
+            foreach (DataRow item in get.Rows)
+            {
+                var time = item["time"].ToString();
+                var salary = double.Parse(item["salary"].ToString());
+                var res = calc.Calc_Salary(time, salary);
+                item["s"] =  res;
+            }
             DataGridView1.DataSource = get;
             conn.Close();
         }

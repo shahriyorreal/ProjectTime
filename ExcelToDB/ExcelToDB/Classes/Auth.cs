@@ -14,7 +14,7 @@ namespace ExcelToDB.Classes
        {
            User user = new User();
            conn.Open();
-           String querry = "SELECT staffs.id ,staffs.`Name` ,profession.`name` AS profession FROM staffs, Profession WHERE username = '"+username+"' AND PASSWORD = '"+password+"' AND id_profession = Profession.`id`";
+           String querry = "SELECT staffs.id ,staffs.`Name` ,profession.`name` AS profession FROM staffs, Profession WHERE username = '" + username + "' AND PASSWORD = '" + password + "' AND id_profession = Profession.`id` AND staffs.`isActive` = 1";
            var dtable = conn.Get(querry);
 
            if (dtable.Rows.Count > 0)
